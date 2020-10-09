@@ -18,3 +18,11 @@ for i in myfile:
     if i not in mynewlist:
         mynewlist.append(i)
         print(i)
+ 
+with open(path,'w') as p:
+           
+    for i in mynewlist:
+        
+        p.writelines(i +'\n')
+    
+    
